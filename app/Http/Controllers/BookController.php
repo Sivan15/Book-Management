@@ -10,7 +10,7 @@ class BookController extends Controller
 
     public function userDashboard()
     {
-        $books = Book::all();
+        $books = Book::paginate(10);
         return view('userdashboard', compact('books'));
     }
     

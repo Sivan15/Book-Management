@@ -14,6 +14,10 @@
             <h1>Books</h1>
             <a href="{{ route('books.create') }}" class="btn btn-primary">Add Book</a>
         </div>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <a href="{{ route('dashboard') }}" class="btn btn-primary">Dashboard</a>
+        </div>
         
         <table class="table table-bordered table-hover">
             <thead class="table-light">

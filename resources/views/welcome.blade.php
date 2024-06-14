@@ -33,12 +33,12 @@
                 <a href="{{ url('/userdashboard') }}" class="text-base mr-5 hover:text-gray-900">UserDashboard</a>
             @endif
         @else
-            <a href="{{ route('login') }}" class="font-semibold bg-primary text-gray-600 hover:text-gray-900 dark:text-primary dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+            <a href="{{ route('login') }}" class="font-semibold text-gray-600 hover:text-gray-900 dark:text-primary dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
                 <button type="button" class="btn btn-primary">Log in</button>
             </a>
 
             @if (Route::has('register'))
-                <a href="{{ route('register') }}" class="ml-4 font-semibold bg-primary text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+                <a href="{{ route('register') }}" class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-white dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
                     <button type="button" class="btn btn-primary">Register</button>
                 </a>
             @endif
