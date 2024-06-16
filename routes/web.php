@@ -21,7 +21,7 @@ Route::get('/', function () {
 
 Route::get('/dashboard', function () {
     return view('dashboard');
-})->middleware(['auth', 'role:admin'])->name('dashboard');
+})->middleware(['auth', 'handle.roles:admin'])->name('dashboard');  
 
 Route::get('/userdashboard', [BookController::class, 'userDashboard'])
     ->middleware(['auth', 'verified'])

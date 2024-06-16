@@ -27,7 +27,7 @@
         @if (Route::has('login'))
     <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
         @auth
-            @if(auth()->user()->role == 'admin')
+            @if(auth()->user()->hasRole('admin'))  
                 <a href="{{ url('/dashboard') }}" class="text-base mr-5 hover:text-gray-900">Dashboard</a>
             @else
                 <a href="{{ url('/userdashboard') }}" class="text-base mr-5 hover:text-gray-900">UserDashboard</a>
